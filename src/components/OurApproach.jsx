@@ -3,7 +3,7 @@ import { FaUsers } from "react-icons/fa6";
 function OurApproach() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-3 gap-x-4 md:gap-x-8">
-      <div className="mt-8 mb-6">
+      <div className="mt-8 md:mt-0 mb-6">
         <h2 className="text-2xl tracking-wide">
           Une équipe passionnée, <br /> une approche agile
         </h2>

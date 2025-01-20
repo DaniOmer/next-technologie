@@ -5,6 +5,7 @@ import HomepageImage from "../assets/homepage.jpg";
 import OurSpecialties from "../components/OurSpecialties";
 import OurExpertises from "../components/OurExpertises";
 import OurApproach from "../components/OurApproach";
+import OurWork from "../components/OurWork";
 
 function Homepage() {
   return (
@@ -77,6 +78,11 @@ function Homepage() {
       {/* Fourth section */}
       <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
         <OurApproach />
+      </div>
+
+      {/* Fifth section */}
+      <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
+        <OurWork />
       </div>
     </div>
   );
