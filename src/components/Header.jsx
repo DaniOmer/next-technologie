@@ -3,7 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 function Header() {
   return (
-    <header>
+    <header className="fixed top-0 left-0 right-0 z-50">
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 h-[60px] border-b">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex flex-col justify-center items-center">
@@ -11,7 +11,7 @@ function Header() {
             <span className="text-[8px]">By NEXT TECHNOLOGIE</span>
           </Link>
           <div className="flex items-center lg:order-2">
-            <button className="flex justify-between items-center border border-primary bg-primary text-white hover:bg-transparent hover:text-black rounded-full text-sm px-2.5 py-1.5 mr-2 transition-all ease-in-out delay-75 group">
+            <button className="flex justify-between items-center border border-primary bg-primary text-white hover:bg-transparent hover:text-black rounded-full text-sm px-2.5 py-1.5 transition-all ease-in-out delay-75 group">
               <span className="block">Contact</span>
               <span className="block p-1.5 rounded-full bg-white text-black ml-2 group-hover:bg-primary group-hover:text-white group-hover:animate-pulse">
                 <IoIosArrowRoundForward />
@@ -59,7 +59,7 @@ function Header() {
               <li>
                 <NavLink
                   to="/"
-                  className="lg:border border-transparent px-3 py-1.5 rounded-full hover:border-slate-300"
+                  className="lg:border border-transparent px-3 py-1.5 rounded-full hover:border-slate-300 transition-all ease-in delay-150"
                   aria-current="page"
                 >
                   Accueil
@@ -68,7 +68,7 @@ function Header() {
               <li>
                 <NavLink
                   to="/our-services"
-                  className="lg:border border-transparent px-3 py-1.5 rounded-full hover:border-slate-300"
+                  className="lg:border border-transparent px-3 py-1.5 rounded-full hover:border-slate-300 transition-all ease-in delay-150"
                   aria-current="page"
                 >
                   Services
@@ -77,7 +77,7 @@ function Header() {
               <li>
                 <NavLink
                   to="/our-work"
-                  className="lg:border border-transparent px-3 py-1.5 rounded-full hover:border-slate-300"
+                  className="lg:border border-transparent px-3 py-1.5 rounded-full hover:border-slate-300 transition-all ease-in delay-150"
                   aria-current="page"
                 >
                   Studio

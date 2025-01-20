@@ -6,9 +6,11 @@ function MainLayout() {
   return (
     <>
       <Header />
-      <div className="min-h-[calc(100vh-120px)] box-border max-w-screen-xl mx-auto pb-4">
-        <Outlet />
-      </div>
+      <main className="px-4">
+        <div className="min-h-[calc(100vh-120px)] mt-[70px] max-w-screen-xl mx-auto pb-4">
+          <Outlet />
+        </div>
+      </main>
       <Footer />
     </>
   );
