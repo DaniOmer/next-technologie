@@ -2,10 +2,12 @@ import { VscDebugBreakpointData } from "react-icons/vsc";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 import HomepageImage from "../assets/homepage.jpg";
+import OurSpecialties from "../components/OurSpecialties";
 
 function Homepage() {
   return (
     <div className="mt-28 lg:mt-20">
+      {/* First section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-screen-xl mx-auto">
         <div className="flex flex-col lg:justify-center lg:items-center">
           <div className="flex justify-center items-center gap-1 px-3 py-1.5 border border-primary rounded-full w-fit text-xs self-start">
@@ -55,6 +57,12 @@ function Homepage() {
               className="h-full w-full object-cover"
             />
           </div>
+        </div>
+      </div>
+      {/* Second section */}
+      <div className="bg-gray-100 py-1 mt-16">
+        <div className="max-w-screen-xl mx-auto">
+          <OurSpecialties />
         </div>
       </div>
     </div>
