@@ -3,6 +3,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 import HomepageImage from "../assets/homepage.jpg";
 import OurSpecialties from "../components/OurSpecialties";
+import OurExpertises from "../components/OurExpertises";
 
 function Homepage() {
   return (
@@ -14,7 +15,7 @@ function Homepage() {
             <VscDebugBreakpointData />
             <span>Ingénierie technologique</span>
           </div>
-          <h1 className="text-3xl lg:text-5xl font-medium my-2 leading-10 lg:leading-tight">
+          <h1 className="text-3xl lg:text-5xl font-medium my-2 leading-10 lg:leading-tight tracking-wide">
             Des concepts audacieux qui repoussent les limites de la créativité.
           </h1>
           <p className="text-base lg:text-lg text-gray-500">
@@ -59,11 +60,17 @@ function Homepage() {
           </div>
         </div>
       </div>
+
       {/* Second section */}
       <div className="bg-gray-100 py-1 mt-16">
         <div className="max-w-screen-xl mx-auto">
           <OurSpecialties />
         </div>
+      </div>
+
+      {/* Third section */}
+      <div className="max-w-screen-xl mx-auto mt-8 md:mt-16">
+        <OurExpertises />
       </div>
     </div>
   );

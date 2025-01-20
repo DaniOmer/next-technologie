@@ -1,6 +1,6 @@
 import { VscDebugBreakpointData } from "react-icons/vsc";
 
-const OurSpecialties = () => {
+function OurSpecialties() {
   const SPECIALITIES = [
     "Développement d'application web",
     "Développement d'application mobile",
@@ -25,6 +25,6 @@ const OurSpecialties = () => {
       </ul>
     </div>
   );
-};
+}
 
 export default OurSpecialties;
