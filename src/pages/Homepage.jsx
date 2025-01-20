@@ -4,6 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import HomepageImage from "../assets/homepage.jpg";
 import OurSpecialties from "../components/OurSpecialties";
 import OurExpertises from "../components/OurExpertises";
+import OurApproach from "../components/OurApproach";
 
 function Homepage() {
   return (
@@ -69,8 +70,13 @@ function Homepage() {
       </div>
 
       {/* Third section */}
-      <div className="max-w-screen-xl mx-auto mt-8 md:mt-16">
+      <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
         <OurExpertises />
+      </div>
+
+      {/* Fourth section */}
+      <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
+        <OurApproach />
       </div>
     </div>
   );
