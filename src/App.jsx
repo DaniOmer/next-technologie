@@ -1,22 +1,27 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import MainLayout from "./layouts/MainLayout";
 import Homepage from "./pages/Homepage";
+import Services from "./pages/Services";
 import About from "./pages/About";
+import Team from "./pages/Team";
+import Work from "./pages/Work";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
     <>
       <Router>
-        <Header />
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="/" element={<MainLayout />}>
+            <Route path="" element={<Homepage />} />
+            <Route path="/about-us" element={<About />} />
+            <Route path="/our-team" element={<Team />} />
+            <Route path="/our-services" element={<Services />} />
+            <Route path="/our-work" element={<Work />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Route>
         </Routes>
-        <Footer />
       </Router>
     </>
   );
