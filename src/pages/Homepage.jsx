@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { VscDebugBreakpointData } from "react-icons/vsc";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -6,10 +8,14 @@ import OurSpecialties from "../components/OurSpecialties";
 import OurExpertises from "../components/OurExpertises";
 import OurApproach from "../components/OurApproach";
 import OurWork from "../components/OurWork";
+import ContactUs from "../components/ContactUs";
+import ContactFormModal from "../components/ContactFormModal";
 
 function Homepage() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="mt-28 lg:mt-20">
+    <div className="mt-28 mb-10 lg:mt-20">
       {/* First section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-screen-xl mx-auto">
         <div className="flex flex-col lg:justify-center lg:items-center">
@@ -25,7 +31,10 @@ function Homepage() {
             font la différence.
           </p>
           <div className="w-full mt-4">
-            <button className="flex justify-between items-center border border-primary bg-primary text-white hover:bg-transparent hover:text-black rounded-full text-sm px-2.5 py-1.5 transition-all ease-in-out delay-75 group">
+            <button
+              className="flex justify-between items-center border border-primary bg-primary text-white hover:bg-transparent hover:text-black rounded-full text-sm px-2.5 py-1.5 transition-all ease-in-out delay-75 group"
+              onClick={() => setIsOpen(true)}
+            >
               <span className="block">Nous contacter</span>
               <span className="block p-1.5 rounded-full bg-white text-black ml-2 group-hover:bg-primary group-hover:text-white group-hover:animate-pulse">
                 <IoIosArrowRoundForward />
@@ -84,6 +93,14 @@ function Homepage() {
       <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
         <OurWork />
       </div>
+
+      {/* Sixth section */}
+      <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
+        <ContactUs />
+      </div>
+
+      {/* Contact form modal */}
+      <ContactFormModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 }

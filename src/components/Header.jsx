@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import ContactFormModal from "./ContactFormModal";
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 h-[60px] border-b">
@@ -11,7 +15,10 @@ function Header() {
             <span className="text-[8px]">By NEXT TECHNOLOGIE</span>
           </Link>
           <div className="flex items-center lg:order-2">
-            <button className="flex justify-between items-center border border-primary bg-primary text-white hover:bg-transparent hover:text-black rounded-full text-sm px-2.5 py-1.5 transition-all ease-in-out delay-75 group">
+            <button
+              className="flex justify-between items-center border border-primary bg-primary text-white hover:bg-transparent hover:text-black rounded-full text-sm px-2.5 py-1.5 transition-all ease-in-out delay-75 group"
+              onClick={() => setIsOpen(true)}
+            >
               <span className="block">Contact</span>
               <span className="block p-1.5 rounded-full bg-white text-black ml-2 group-hover:bg-primary group-hover:text-white group-hover:animate-pulse">
                 <IoIosArrowRoundForward />
@@ -67,7 +74,7 @@ function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/our-services"
+                  to="/our-expertise"
                   className="lg:border border-transparent px-3 py-1.5 rounded-full hover:border-slate-300 transition-all ease-in delay-150"
                   aria-current="page"
                 >
@@ -87,6 +94,8 @@ function Header() {
           </div>
         </div>
       </nav>
+
+      <ContactFormModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </header>
   );
 }
