@@ -4,6 +4,13 @@ import { TbCloudCode } from "react-icons/tb";
 import { ImMobile } from "react-icons/im";
 import { FaDesktop } from "react-icons/fa";
 import { TbWorldCode } from "react-icons/tb";
+import { FaDocker } from "react-icons/fa";
+import { AiOutlineCloudSync } from "react-icons/ai";
+import { AiOutlineRadarChart } from "react-icons/ai";
+import { FaShieldAlt } from "react-icons/fa";
+import { TbCloud } from "react-icons/tb";
+import { MdOutlineCode } from "react-icons/md";
+import { TbPalette } from "react-icons/tb";
 
 import TextGradient from "../components/TextGradient";
 import ExpertiseCard from "../components/ExpertiseCard";
@@ -24,6 +31,7 @@ function Expertises() {
           </p>
         </div>
       </section>
+
       {/* Expertises */}
       <section className="mt-8 md:mt-24">
         {/* Developement section */}
@@ -74,6 +82,58 @@ function Expertises() {
               description="Nous sommes spécialisés dans le développement de solutions de communication internes efficaces pour votre entreprise ou organisation."
             >
               <TbWorldCode className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+          </div>
+        </div>
+
+        {/* Network and cloud section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-24">
+          <div>
+            <h2 className="text-lg md:text-xl font-medium mb-1">
+              Cloud et DevOps
+            </h2>
+            <p className="text-sm md:text-base">
+              Nous vous accompagnons dans votre transition vers le cloud,
+              l’automatisation et l’optimisation de vos infrastructures IT, tout
+              en garantissant robustesse et performance.
+            </p>
+          </div>
+          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <ExpertiseCard
+              title="Migration vers le cloud"
+              description="Accompagnement dans la migration de vos applications et données vers des solutions cloud comme AWS, Azure, ou GCP."
+            >
+              <TbCloud className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+            <ExpertiseCard
+              title="Infrastructure as Code (IaC)"
+              description="Automatisation de vos infrastructures avec des outils comme Terraform, Ansible, et CloudFormation."
+            >
+              <MdOutlineCode className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+            <ExpertiseCard
+              title="Conteneurs et orchestration"
+              description="Mise en œuvre de solutions basées sur Docker et Kubernetes pour une gestion efficace des conteneurs."
+            >
+              <FaDocker className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+            <ExpertiseCard
+              title="CI/CD et automatisation"
+              description="Déploiement rapide et fiable grâce à des pipelines CI/CD configurés avec GitHub Actions, GitLab CI, ou Jenkins."
+            >
+              <AiOutlineCloudSync className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+            <ExpertiseCard
+              title="Surveillance et observabilité"
+              description="Implémentation de solutions de monitoring comme Prometheus, Grafana, et ELK Stack pour garantir la stabilité de vos systèmes."
+            >
+              <AiOutlineRadarChart className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+            <ExpertiseCard
+              title="Sécurité des infrastructures"
+              description="Mise en place de pratiques DevSecOps pour protéger vos systèmes et données contre les cybermenaces."
+            >
+              <FaShieldAlt className="w-10 h-10 text-primary" />
             </ExpertiseCard>
           </div>
         </div>
