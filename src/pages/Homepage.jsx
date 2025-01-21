@@ -15,7 +15,7 @@ function Homepage() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mt-28 mb-10 lg:mt-20">
+    <div className="mt-28 mb-10 lg:mt-32">
       {/* First section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-screen-xl mx-auto">
         <div className="flex flex-col lg:justify-center lg:items-center">
@@ -80,22 +80,22 @@ function Homepage() {
       </div>
 
       {/* Third section */}
-      <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
+      <div className="mt-8 md:mt-24">
         <OurExpertises />
       </div>
 
       {/* Fourth section */}
-      <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
+      <div className="mt-8 md:mt-24">
         <OurApproach />
       </div>
 
       {/* Fifth section */}
-      <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
+      <div className="mt-8 md:mt-24">
         <OurWork />
       </div>
 
       {/* Sixth section */}
-      <div className="max-w-screen-xl mx-auto mt-8 md:mt-24">
+      <div className="mt-8 md:mt-24">
         <ContactUs />
       </div>
 

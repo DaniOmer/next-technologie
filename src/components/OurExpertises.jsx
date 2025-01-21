@@ -8,7 +8,7 @@ function OurExpertises() {
   return (
     <section>
       <div className="flex flex-col md:flex-row md:justify-between md:items-start">
-        <h2 className="text-2xl tracking-wide">Notre expertise</h2>
+        <h2 className="text-2xl tracking-wide">Nos expertises</h2>
         <p className="text-xs tracking-normal">
           Chez IW Studio, nous proposons une gamme complète{" "}
           <br className="hidden md:block" /> de services pour répondre à vos

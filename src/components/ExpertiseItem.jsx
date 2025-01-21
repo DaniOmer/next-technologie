@@ -10,7 +10,7 @@ function ExpertiseItem({ image, title }) {
         {title}
       </h3>
       <Link
-        to="/our-services"
+        to="/our-expertises"
         className="absolute bottom-3 right-3 text-black bg-white shadow p-2 rounded-full"
       >
         <RiArrowRightUpLine />

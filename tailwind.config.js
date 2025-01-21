@@ -11,9 +11,18 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(calc(-50% - 5px))" },
         },
+        "text-gradient": {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+      },
+      backgroundSize: {
+        "300%": "300%",
       },
       animation: {
         "infinite-scroll": "infinite-scroll 20s linear infinite",
+        "text-gradient": "text-gradient 6s linear infinite alternate",
       },
     },
   },
