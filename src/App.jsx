@@ -7,11 +7,13 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import Work from "./pages/Work";
 import PageNotFound from "./pages/PageNotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route path="" element={<Homepage />} />
