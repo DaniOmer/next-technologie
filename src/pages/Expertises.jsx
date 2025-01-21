@@ -11,6 +11,11 @@ import { FaShieldAlt } from "react-icons/fa";
 import { TbCloud } from "react-icons/tb";
 import { MdOutlineCode } from "react-icons/md";
 import { TbPalette } from "react-icons/tb";
+import { TbTypography } from "react-icons/tb";
+import { FaLaptopCode } from "react-icons/fa";
+import { ImFilePicture } from "react-icons/im";
+import { TbVideoPlus } from "react-icons/tb";
+import { FaBezierCurve } from "react-icons/fa";
 
 import TextGradient from "../components/TextGradient";
 import ExpertiseCard from "../components/ExpertiseCard";
@@ -134,6 +139,52 @@ function Expertises() {
               description="Mise en place de pratiques DevSecOps pour protéger vos systèmes et données contre les cybermenaces."
             >
               <FaShieldAlt className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+          </div>
+        </div>
+
+        {/* Design and graphic chart */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-24">
+          <div>
+            <h2 className="text-lg md:text-xl font-medium mb-1">
+              Design et identité visuelle
+            </h2>
+            <p className="text-sm md:text-base">
+              Nous concevons des identités visuelles percutantes et des designs
+              uniques pour mettre en valeur votre marque et sublimer vos
+              supports de communication.
+            </p>
+          </div>
+          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <ExpertiseCard
+              title="Création de charte graphique"
+              description="Conception de chartes graphiques sur mesure pour garantir la cohérence visuelle de votre marque sur tous vos supports."
+            >
+              <TbPalette className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+            <ExpertiseCard
+              title="Design de logos"
+              description="Création de logos uniques et mémorables qui reflètent l’identité et les valeurs de votre entreprise."
+            >
+              <TbTypography className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+            <ExpertiseCard
+              title="UI/UX Design"
+              description="Conception d’interfaces utilisateur modernes et intuitives, centrées sur l’expérience utilisateur (UX)."
+            >
+              <FaLaptopCode className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+            <ExpertiseCard
+              title="Supports de communication"
+              description="Création de visuels pour vos supports imprimés (flyers, affiches) et numériques (bannières, réseaux sociaux)."
+            >
+              <ImFilePicture className="w-10 h-10 text-primary" />
+            </ExpertiseCard>
+            <ExpertiseCard
+              title="Prototypes interactifs"
+              description="Création de prototypes interactifs pour vos applications web et mobiles, facilitant la validation et le feedback."
+            >
+              <FaBezierCurve className="w-10 h-10 text-primary" />
             </ExpertiseCard>
           </div>
         </div>
