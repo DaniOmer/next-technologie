@@ -1,8 +1,6 @@
-import SmoothBill from "../assets/smoothbill.png";
 import Ecommerce1 from "../assets/ecommerce-1.webp";
 import Ecommerce3 from "../assets/ecommerce-3.webp";
 import SaasInvoice from "../assets/sass-invoice.webp";
-import { Link } from "react-router-dom";
 
 function OurWork() {
   return (

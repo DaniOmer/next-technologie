@@ -30,7 +30,7 @@ function Expertises() {
     <div className="mt-28 mb-10 lg:mt-32">
       {/* Hero section */}
       <section>
-        <div className="w-full md:w-2/3 lg:w-1/2 mx-auto md:text-center">
+        <div className="w-full md:w-2/3 mx-auto md:text-center">
           <h1 className="text-3xl lg:text-5xl font-medium tracking-wide">
             <TextGradient text="Nos expertises" />
           </h1>
