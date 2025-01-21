@@ -1,7 +1,13 @@
+import { useState } from "react";
+
 import TextGradient from "../components/TextGradient";
 import OfficeImage from "../assets/office.png";
+import ContactUs from "../components/ContactUs";
+import ContactFormModal from "../components/ContactFormModal";
 
 function About() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="mt-28 mb-10 lg:mt-32">
       {/* Hero section */}
@@ -30,7 +36,7 @@ function About() {
       </section>
 
       {/* Experiences */}
-      <section className="mt-8 md:mt-16">
+      <section className="mt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
           <div className="text-center sm:text-left">
             <p className="text-3xl md:text-4xl lg:text-5xl font-bold">
@@ -84,7 +90,7 @@ function About() {
       </section>
 
       {/* What we valuable ? */}
-      <section className="mt-8 md:mt-16 bg-slate-300 px-4 py-6 md:py-10 rounded-lg">
+      <section className="mt-8 md:mt-16 bg-slate-200 px-4 py-6 md:py-10 rounded-lg">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 lg:gap-16">
           <div>
             <h2 className="text-2xl md:text-3xl font-medium mb-4">
@@ -153,6 +159,14 @@ function About() {
           </div>
         </div>
       </section>
+
+      {/* Contact us */}
+      <div className="mt-8 md:mt-24">
+        <ContactUs setIsOpen={setIsOpen} />
+      </div>
+
+      {/* Modal Contact */}
+      <ContactFormModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 }
