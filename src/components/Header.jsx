@@ -4,8 +4,8 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import ContactFormModal from "./ContactFormModal";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false); // Contrôle de la modal
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Contrôle du menu mobile
+  const [isOpen, setIsOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -13,8 +13,8 @@ function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      <nav className="relative bg-white border-gray-200 px-4 lg:px-6 py-2.5 h-[60px] border-b">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+      <nav className="relative bg-white border-gray-200 px-4 lg:px-6 flex flex-col justify-center h-[60px] border-b">
+        <div className="w-full flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           {/* Logo */}
           <Link to="/" className="flex flex-col justify-center items-center">
             <h1 className="text-2xl uppercase m-0">IW Studio</h1>
@@ -22,7 +22,7 @@ function Header() {
           </Link>
 
           {/* Boutons de droite */}
-          <div className="flex items-center lg:order-2">
+          <div className="flex items-center md:order-2">
             {/* Bouton de contact */}
             <button
               className="flex justify-between items-center border border-primary bg-primary text-white hover:bg-transparent hover:text-black rounded-full text-sm px-2.5 py-1.5 transition-all ease-in-out delay-75 group"
@@ -37,7 +37,7 @@ function Header() {
             {/* Bouton pour ouvrir/fermer le menu mobile */}
             <button
               onClick={toggleMobileMenu}
-              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
               aria-controls="mobile-menu-2"
               aria-expanded={isMobileMenuOpen}
             >
@@ -74,10 +74,10 @@ function Header() {
 
           {/* Menu desktop */}
           <div
-            className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 lg:flex-row lg:space-x-14 lg:mt-0">
+            <ul className="flex mt-4 flex-row lg:space-x-14 lg:mt-0">
               <li>
                 <NavLink
                   to="/"
@@ -104,11 +104,12 @@ function Header() {
               </li>
             </ul>
           </div>
+
           {/* Menu mobile */}
           <div
             className={`${
               isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-            } lg:hidden absolute top-[60px] left-0 right-0 flex flex-col justify-start items-center w-full h-[300px] overflow-y-auto transition-transform ease-in duration-300 bg-gray-200`}
+            } md:hidden absolute top-[60px] left-0 right-0 flex flex-col justify-start items-center w-full h-[300px] overflow-y-auto transition-transform ease-in duration-300 bg-gray-200`}
             id="mobile-menu-2"
           >
             <ul className="flex flex-col space-y-10 mt-4 justify-center items-center w-full">

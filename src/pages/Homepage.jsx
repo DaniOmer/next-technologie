@@ -96,7 +96,7 @@ function Homepage() {
 
       {/* Sixth section */}
       <div className="mt-8 md:mt-24">
-        <ContactUs />
+        <ContactUs setIsOpen={setIsOpen} />
       </div>
 
       {/* Contact form modal */}

@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { CgWebsite } from "react-icons/cg";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { TbCloudCode } from "react-icons/tb";
@@ -14,13 +16,16 @@ import { TbPalette } from "react-icons/tb";
 import { TbTypography } from "react-icons/tb";
 import { FaLaptopCode } from "react-icons/fa";
 import { ImFilePicture } from "react-icons/im";
-import { TbVideoPlus } from "react-icons/tb";
 import { FaBezierCurve } from "react-icons/fa";
 
 import TextGradient from "../components/TextGradient";
 import ExpertiseCard from "../components/ExpertiseCard";
+import ContactFormModal from "../components/ContactFormModal";
+import ContactUs from "../components/ContactUs";
 
 function Expertises() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="mt-28 mb-10 lg:mt-32">
       {/* Hero section */}
@@ -189,6 +194,14 @@ function Expertises() {
           </div>
         </div>
       </section>
+
+      {/* Sixth section */}
+      <div className="mt-8 md:mt-24">
+        <ContactUs setIsOpen={setIsOpen} />
+      </div>
+
+      {/* Contact form modal */}
+      <ContactFormModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 }
