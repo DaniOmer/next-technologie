@@ -40,7 +40,7 @@ function About() {
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
           <div className="text-center sm:text-left">
             <p className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              <TextGradient text="110" />
+              <TextGradient text="60" />
             </p>
             <h3 className="text-base md:text-lg font-medium">
               Projets réalisés
@@ -52,13 +52,13 @@ function About() {
           </div>
           <div className="text-center sm:text-left">
             <p className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              <TextGradient text="70" />
+              <TextGradient text="50" />
             </p>
             <h3 className="text-base md:text-lg font-medium">
               Clients satisfaits
             </h3>
             <p className="text-sm">
-              Nous avons accompagné plus de 12 clients dans la création de
+              Nous avons accompagné plus de 50 clients dans la création de
               services digitaux.
             </p>
           </div>

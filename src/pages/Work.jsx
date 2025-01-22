@@ -34,7 +34,7 @@ function Work() {
       {/* Work */}
       <section className="mt-8 md:mt-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-6">
-          <div className="flex flex-col">
+          <div className="flex flex-col min-h-full">
             <img
               src={Ecommerce1}
               alt="our-work-1"
@@ -48,7 +48,7 @@ function Work() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col min-h-full">
             <img
               src={Customer3}
               alt="our-work-3"
@@ -62,7 +62,7 @@ function Work() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col min-h-full">
             <img
               src={SaasInvoice}
               alt="our-work-2"
@@ -76,7 +76,7 @@ function Work() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col min-h-full">
             <img
               src={Customer1}
               alt="our-work-3"
@@ -90,7 +90,7 @@ function Work() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col min-h-full">
             <img
               src={Ecommerce3}
               alt="our-work-3"
@@ -99,10 +99,10 @@ function Work() {
             <h3>Site Ecommerce de vente de mobiliers</h3>
             <p className="text-sm text-gray-500">
               <span className="font-medium text-black">Stack technique</span> :
-              Vue.js, fastAPI PostgreSQL, Tailwindcss
+              Vue.js, fastAPI, PostgreSQL, Tailwindcss
             </p>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col min-h-full">
             <img
               src={Customer2}
               alt="our-work-3"
