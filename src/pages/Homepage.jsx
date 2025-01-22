@@ -45,19 +45,19 @@ function Homepage() {
         <div className="w-full max-h-[450px] grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-4">
           <div className="grid md:grid-rows-3 grid-cols-2 md:grid-cols-1 gap-2 md:gap-4">
             <div className="md:row-span-2 flex flex-col justify-center items-center border border-primary rounded-3xl">
-              <h2 className="text-3xl md:text-7xl font-medium my-1 leading-10 lg:leading-tight text-primary">
+              <h2 className="text-2xl md:text-5xl lg:text-7xl font-medium lg:font-bold my-1 leading-10 lg:leading-tight text-primary">
                 60 +
               </h2>
-              <p className="text-xs md:text-sm text-center p-2">
+              <p className="text-xs md:text-sm text-center p-2 h-[65px] md:h-fit">
                 Projets réalisés pour nos clients avec un taux de satisfaction
                 de 100%.{" "}
               </p>
             </div>
             <div className="flex flex-col justify-center items-center bg-primary text-white rounded-3xl">
-              <h2 className="text-2xl md:text-5xl font-bold my-1 leading-10 lg:leading-tight">
+              <h2 className="text-2xl md:text-5xl font-medium lg:font-bold my-1 leading-10 lg:leading-tight">
                 50 +
               </h2>
-              <p className="text-xs md:text-sm text-center p-2">
+              <p className="text-xs md:text-sm text-center p-2 h-[65px] md:h-fit">
                 Clients nous ont fait confiance pour leurs projets.{" "}
               </p>
             </div>
