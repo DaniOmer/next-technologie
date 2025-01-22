@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import { ToastContainer } from "react-toastify";
+
 import MainLayout from "./layouts/MainLayout";
 import Homepage from "./pages/Homepage";
 import Expertises from "./pages/Expertises";
@@ -14,6 +16,7 @@ function App() {
     <>
       <Router>
         <ScrollToTop />
+        <ToastContainer />
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route path="" element={<Homepage />} />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import { toast } from "react-toastify";
 
 function ContactFormModal({ isOpen, setIsOpen }) {
   const [formData, setFormData] = useState({
@@ -19,7 +20,10 @@ function ContactFormModal({ isOpen, setIsOpen }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Données soumises :", formData);
-    // LOGIQUE API ICI
+
+    toast.success("Message envoyé avec succès !", { position: "top-right" });
+
+    setFormData({ email: "", subject: "", message: "" });
     setIsOpen(false);
   };
 
