@@ -22,7 +22,7 @@ export const teamData = [
   {
     id: 5,
     name: "Jay LETA",
-    role: "Responsable technique",
+    role: "Développeur & Devops",
     image: images.team5,
   },
   {
