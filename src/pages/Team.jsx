@@ -1,8 +1,13 @@
+import { useState } from "react";
 import TextGradient from "../components/TextGradient";
 import TeamCard from "../components/TeamCard";
 import { teamData } from "../constants/team";
+import ContactUs from "../components/ContactUs";
+import ContactFormModal from "../components/ContactFormModal";
 
 function Team() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="mt-28 mb-10 lg:mt-32">
       {/* Hero section */}
@@ -35,6 +40,12 @@ function Team() {
           ))}
         </div>
       </section>
+      {/* Contact section */}
+      <section className="mt-8 md:mt-16 lg:mt-24">
+        <ContactUs setIsOpen={setIsOpen} />
+      </section>
+      {/* Modal Contact */}
+      <ContactFormModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 }
