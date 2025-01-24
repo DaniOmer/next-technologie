@@ -17,6 +17,8 @@ import team3 from "../assets/team-3.jpeg";
 import team4 from "../assets/team-4.jpeg";
 import team5 from "../assets/team-5.jpeg";
 import team6 from "../assets/team-6.webp";
+import team7 from "../assets/team-7.jpeg";
+import team8 from "../assets/team-8.jpeg";
 
 export const images = {
   customer1,
@@ -38,4 +40,6 @@ export const images = {
   team4,
   team5,
   team6,
+  team7,
+  team8,
 };
