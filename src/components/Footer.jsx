@@ -22,11 +22,11 @@ function Footer() {
               À propos
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link to="/our-team" className="hover:underline me-4 md:me-6">
               Notre équipe
             </Link>
-          </li> */}
+          </li>
           <li>
             <button className="hover:underline" onClick={() => setIsOpen(true)}>
               Contact

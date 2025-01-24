@@ -11,8 +11,14 @@ import saas from "../assets/sass-invoice.webp";
 import office from "../assets/office.png";
 import invoice from "../assets/sass-invoice.webp";
 import smoothbill from "../assets/smoothbill.png";
+import team1 from "../assets/team-1.jpeg";
+import team2 from "../assets/team-2.jpeg";
+import team3 from "../assets/team-3.jpeg";
+import team4 from "../assets/team-4.jpeg";
+import team5 from "../assets/team-5.jpeg";
+import team6 from "../assets/team-6.webp";
 
-export const {
+export const images = {
   customer1,
   customer2,
   development,
@@ -26,4 +32,10 @@ export const {
   office,
   invoice,
   smoothbill,
-} = images;
+  team1,
+  team2,
+  team3,
+  team4,
+  team5,
+  team6,
+};
