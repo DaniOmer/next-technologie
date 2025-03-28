@@ -10,6 +10,7 @@ import Team from "./pages/Team";
 import Work from "./pages/Work";
 import PageNotFound from "./pages/PageNotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import ChatButton from "./components/ChatButton";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Router>
         <ScrollToTop />
         <ToastContainer />
+        <ChatButton />
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route path="" element={<Homepage />} />
