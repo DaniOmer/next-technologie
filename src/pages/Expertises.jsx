@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { CgWebsite } from "react-icons/cg";
 import { MdOutlineShoppingCart } from "react-icons/md";
@@ -29,24 +30,55 @@ function Expertises() {
   return (
     <div className="mt-28 mb-10 lg:mt-32">
       {/* Hero section */}
-      <section>
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="w-full md:w-2/3 mx-auto md:text-center">
-          <h1 className="text-3xl lg:text-5xl font-medium tracking-wide">
+          <motion.h1
+            className="text-3xl lg:text-5xl font-medium tracking-wide"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <TextGradient text="Nos expertises" />
-          </h1>
-          <p className="text-sm md:text-base mt-2 lg:mt-4">
+          </motion.h1>
+          <motion.p
+            className="text-sm md:text-base mt-2 lg:mt-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             Chez IW Studio, nous proposons un pannel de service digitaux et un
             accompagnement sur-mesure, court, moyen et long terme selon les
             besoins de votre projet.
-          </p>
+          </motion.p>
         </div>
-      </section>
+      </motion.section>
 
       {/* Expertises */}
-      <section className="mt-8 md:mt-24">
+      <motion.section
+        className="mt-8 md:mt-24"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         {/* Developement section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <h2 className="text-lg md:text-xl font-medium mb-1">
               Développement d'applications
             </h2>
@@ -55,8 +87,14 @@ function Expertises() {
               besoins, en utilisant des technologies modernes et adaptées à vos
               besoins.
             </p>
-          </div>
-          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+          </motion.div>
+          <motion.div
+            className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <ExpertiseCard
               title="Création de site vitrine"
               description="Création de sites corporate sous Wordpress, Shopify, Prestashop, Magento, etc..."
@@ -93,22 +131,39 @@ function Expertises() {
             >
               <TbWorldCode className="w-10 h-10 text-primary" />
             </ExpertiseCard>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Network and cloud section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-24">
-          <div>
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-24"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <h2 className="text-lg md:text-xl font-medium mb-1">
               Cloud et DevOps
             </h2>
             <p className="text-sm md:text-base">
               Nous vous accompagnons dans votre transition vers le cloud,
-              l’automatisation et l’optimisation de vos infrastructures IT, tout
+              l'automatisation et l'optimisation de vos infrastructures IT, tout
               en garantissant robustesse et performance.
             </p>
-          </div>
-          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+          </motion.div>
+          <motion.div
+            className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <ExpertiseCard
               title="Migration vers le cloud"
               description="Accompagnement dans la migration de vos applications et données vers des solutions cloud comme AWS, Azure, ou GCP."
@@ -145,12 +200,23 @@ function Expertises() {
             >
               <FaShieldAlt className="w-10 h-10 text-primary" />
             </ExpertiseCard>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Design and graphic chart */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-24">
-          <div>
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 md:mt-24"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <h2 className="text-lg md:text-xl font-medium mb-1">
               Design et identité visuelle
             </h2>
@@ -159,8 +225,14 @@ function Expertises() {
               uniques pour mettre en valeur votre marque et sublimer vos
               supports de communication.
             </p>
-          </div>
-          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+          </motion.div>
+          <motion.div
+            className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <ExpertiseCard
               title="Création de charte graphique"
               description="Conception de chartes graphiques sur mesure pour garantir la cohérence visuelle de votre marque sur tous vos supports."
@@ -169,13 +241,13 @@ function Expertises() {
             </ExpertiseCard>
             <ExpertiseCard
               title="Design de logos"
-              description="Création de logos uniques et mémorables qui reflètent l’identité et les valeurs de votre entreprise."
+              description="Création de logos uniques et mémorables qui reflètent l'identité et les valeurs de votre entreprise."
             >
               <TbTypography className="w-10 h-10 text-primary" />
             </ExpertiseCard>
             <ExpertiseCard
               title="UI/UX Design"
-              description="Conception d’interfaces utilisateur modernes et intuitives, centrées sur l’expérience utilisateur (UX)."
+              description="Conception d'interfaces utilisateur modernes et intuitives, centrées sur l'expérience utilisateur (UX)."
             >
               <FaLaptopCode className="w-10 h-10 text-primary" />
             </ExpertiseCard>
@@ -191,14 +263,20 @@ function Expertises() {
             >
               <FaBezierCurve className="w-10 h-10 text-primary" />
             </ExpertiseCard>
-          </div>
-        </div>
-      </section>
+          </motion.div>
+        </motion.div>
+      </motion.section>
 
-      {/* Sixth section */}
-      <div className="mt-8 md:mt-24">
+      {/* Contact section */}
+      <motion.div
+        className="mt-8 md:mt-24"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <ContactUs setIsOpen={setIsOpen} />
-      </div>
+      </motion.div>
 
       {/* Contact form modal */}
       <ContactFormModal isOpen={isOpen} setIsOpen={setIsOpen} />

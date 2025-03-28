@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import TextGradient from "../components/TextGradient";
 import ContactUs from "../components/ContactUs";
@@ -17,24 +18,57 @@ function Work() {
   return (
     <div className="mt-28 mb-10 lg:mt-32">
       {/* Hero section */}
-      <section>
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="w-full md:w-2/3 mx-auto md:text-center">
-          <h1 className="text-3xl lg:text-5xl font-medium tracking-wide">
+          <motion.h1
+            className="text-3xl lg:text-5xl font-medium tracking-wide"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <TextGradient text="Nos dernières réalisations" />
-          </h1>
-          <p className="text-sm md:text-base mt-2 lg:mt-4">
+          </motion.h1>
+          <motion.p
+            className="text-sm md:text-base mt-2 lg:mt-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             Chez IW Studio, chaque projet est une opportunité de repousser les
             limites de la créativité et de la performance. Découvrez comment
             nous avons aidé nos clients à concrétiser leurs ambitions grâce à
             des solutions sur mesure, innovantes et impactantes.
-          </p>
+          </motion.p>
         </div>
-      </section>
+      </motion.section>
 
       {/* Work */}
-      <section className="mt-8 md:mt-24">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-6">
-          <div className="flex flex-col min-h-full">
+      <motion.section
+        className="mt-8 md:mt-24"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <motion.div
+            className="flex flex-col min-h-full"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 300 }}
+            viewport={{ once: true }}
+          >
             <img
               src={Ecommerce1}
               alt="our-work-1"
@@ -47,8 +81,15 @@ function Work() {
                 : ReactJS, Symfony, PostgreSQL
               </p>
             </div>
-          </div>
-          <div className="flex flex-col min-h-full">
+          </motion.div>
+          <motion.div
+            className="flex flex-col min-h-full"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 300 }}
+            viewport={{ once: true }}
+          >
             <img
               src={Customer3}
               alt="our-work-3"
@@ -61,8 +102,15 @@ function Work() {
                 : React.js, Electron.js, Django, PostgreSQL
               </p>
             </div>
-          </div>
-          <div className="flex flex-col min-h-full">
+          </motion.div>
+          <motion.div
+            className="flex flex-col min-h-full"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 300 }}
+            viewport={{ once: true }}
+          >
             <img
               src={SaasInvoice}
               alt="our-work-2"
@@ -75,8 +123,15 @@ function Work() {
                 : Next.js, TypeScript, mongoDB, Tailwindcss
               </p>
             </div>
-          </div>
-          <div className="flex flex-col min-h-full">
+          </motion.div>
+          <motion.div
+            className="flex flex-col min-h-full"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 300 }}
+            viewport={{ once: true }}
+          >
             <img
               src={Customer1}
               alt="our-work-3"
@@ -89,8 +144,15 @@ function Work() {
                 : Next.js, TailwindCss
               </p>
             </div>
-          </div>
-          <div className="flex flex-col min-h-full">
+          </motion.div>
+          <motion.div
+            className="flex flex-col min-h-full"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 300 }}
+            viewport={{ once: true }}
+          >
             <img
               src={Ecommerce3}
               alt="our-work-3"
@@ -101,8 +163,15 @@ function Work() {
               <span className="font-medium text-black">Stack technique</span> :
               Vue.js, fastAPI, PostgreSQL, Tailwindcss
             </p>
-          </div>
-          <div className="flex flex-col min-h-full">
+          </motion.div>
+          <motion.div
+            className="flex flex-col min-h-full"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 300 }}
+            viewport={{ once: true }}
+          >
             <img
               src={Customer2}
               alt="our-work-3"
@@ -115,14 +184,20 @@ function Work() {
                 : Wordpress
               </p>
             </div>
-          </div>
-        </div>
-      </section>
+          </motion.div>
+        </motion.div>
+      </motion.section>
 
       {/* Contact us */}
-      <div className="mt-8 md:mt-24">
+      <motion.div
+        className="mt-8 md:mt-24"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <ContactUs setIsOpen={setIsOpen} />
-      </div>
+      </motion.div>
 
       {/* Modal Contact */}
       <ContactFormModal isOpen={isOpen} setIsOpen={setIsOpen} />
